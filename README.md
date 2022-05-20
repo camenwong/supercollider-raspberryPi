@@ -7,13 +7,11 @@ Several features it should achive:
 * Connect to midi controller automatically (tested with Behringer x touch mini).
 * Running whether with head or in headless mode, it dose not need to specify again.
 * Several Quacks (StartupFile, MTMI...) get installed in supercollider.
-***
 ## Install PatchBox
 >Patchbox OS is a custom Linux distribution specially designed for Raspberry Pi based audio projects. It comes pre-configured for low latency audio performance and pre-installed audio software that will help you get started with your projects in no time!
 
 download and flash it into sd card.  
 [PatchBos OS](https://blokas.io/patchbox-os/)
-***
 ### Initial setup wizard in PatchBox
 Make sure the buffer size is bigger than 512 so that it has no distorded sound.
 Choosing the right sound interface.
@@ -30,7 +28,7 @@ It should looks like this:
 Check if the `hw:Device` , `-p 512` and `-X seq` is correct!
 
 **Save it with ctl+x, press y and then enter.**
-***
+## Install StartupFile Quack  
 ## Jack Autostart with [systemd](https://wiki.archlinux.org/title/systemd)
 
 Modify Jack.service:  
@@ -82,14 +80,13 @@ WantedBy=graphical.target
 
 Reload the the file:  
 `sudo systemctl daemon-reload`  
-Enable jack to boot itself whenever it is:  
-`sudo systemctl enable jack`
+Enable supercollider to boot itself whenever it is:  
+`sudo systemctl enable supercollider`
 ## Connect to midi controller
 
 Disable the preset midi connection in Patchbox:  
 `sudo systemctl stop amidiauto`  
 `sudo systemctl disable amidiauto` 
-***
 ## Testing
 Reboot the RPI after connect everything (usb audio interface, MIDI controller...)  
 `sudo reboot`
