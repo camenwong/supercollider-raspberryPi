@@ -10,7 +10,7 @@ Several features it should achive:
 ## Install PatchBox
 >Patchbox OS is a custom Linux distribution specially designed for Raspberry Pi based audio projects. It comes pre-configured for low latency audio performance and pre-installed audio software that will help you get started with your projects in no time!
 
-download and flash it into sd card.  
+download and flash it into sd card. (Release date:2022-05-17)  
 [PatchBos OS](https://blokas.io/patchbox-os/)
 ### Initial setup wizard in PatchBox
 Make sure the buffer size is bigger than 512 so that it has no distorded sound.
@@ -78,7 +78,7 @@ WantedBy=graphical.target
 ```
 **Here `User = patch`, make sure that user is whatever your username is, in my case it is patch.**
 
-Reload the the file:  
+Reload the the file (make sure to do so after everytime you modify the file)   
 `sudo systemctl daemon-reload`  
 Enable supercollider to boot itself whenever it is:  
 `sudo systemctl enable supercollider`
@@ -89,7 +89,9 @@ Disable the preset midi connection in Patchbox:
 `sudo systemctl disable amidiauto` 
 ## Testing
 Reboot the RPI after connect everything (usb audio interface, MIDI controller...)  
-`sudo reboot`
+`sudo reboot`  
+Check if the controller is connected  
+`lsusb`  
 
 one can restart the sevice to test it first on the fly.  
 `sudo systemctl stop jack`  
