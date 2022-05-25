@@ -3,7 +3,7 @@ An instruction of configuration of running supercollider autostart in Raspberry 
 
 Several features it should achive: 
 * Using Patchbox OS.
-* Autostart with jack and supercollider IDE, sclang get booted successfully with StartupFile Quack.
+* Autostart with jack and supercollider IDE, sclang get booted successfully with StartupFile Quark.
 * Connect to midi controller automatically (tested with Behringer x touch mini).
 * Running whether with head or in headless mode, it dose not need to specify again.
 * Several Quacks (StartupFile, MTMI...) get installed in supercollider.
@@ -28,7 +28,7 @@ It should looks like this:
 Check if the `hw:Device` , `-p 512` and `-X seq` is correct!
 
 **Save it with ctl+x, press y and then enter.**
-## Install StartupFile Quack  
+## Install StartupFile Quark  
 ## Jack Autostart with [systemd](https://wiki.archlinux.org/title/systemd)
 
 Modify Jack.service:  
