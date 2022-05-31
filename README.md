@@ -11,7 +11,7 @@ Several features it should achive:
 >Patchbox OS is a custom Linux distribution specially designed for Raspberry Pi based audio projects. It comes pre-configured for low latency audio performance and pre-installed audio software that will help you get started with your projects in no time!
 
 download and flash it into sd card. (Release date:2022-05-17)  
-[PatchBos OS](https://blokas.io/patchbox-os/)
+[PatchBox OS](https://blokas.io/patchbox-os/)
 ### Initial setup wizard in PatchBox
 Make sure the buffer size is bigger than 512 so that it has no distorded sound.
 Choosing the right sound interface.
