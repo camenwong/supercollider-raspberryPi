@@ -6,7 +6,7 @@ Several features it should achive:
 * Autostart with jack and supercollider IDE, sclang get booted successfully with StartupFile Quark.
 * Connect to midi controller automatically (tested with Behringer x touch mini).
 * Running whether with head or in headless mode, it dose not need to specify again.
-* Several Quacks (StartupFile, MTMI...) get installed in supercollider.
+* Several Quacks (StartupFile, NTMI...) get installed in supercollider.
 ## Install PatchBox
 >Patchbox OS is a custom Linux distribution specially designed for Raspberry Pi based audio projects. It comes pre-configured for low latency audio performance and pre-installed audio software that will help you get started with your projects in no time!
 
